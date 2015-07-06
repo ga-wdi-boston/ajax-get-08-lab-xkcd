@@ -1,6 +1,6 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# XKCD Ajax Lab
+# AJAX GET :: Lab
 ## Objectives
 - Be able to use jQuery AJAX to make GET requests to a 3rd-party API.
 
