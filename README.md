@@ -14,6 +14,20 @@ We're going to play around with an API! This [unofficial XKCD API](http://xkcd-u
 - When one of these buttons gets clicked, it should trigger an AJAX request which asks the API for a JSON containing info on all comics from that year.
 - Once you have results, you should render the XKCD comics to the page in some manner (list, images, etc).
 
+NOTE: In order to get more than three comics at a time, you'll need to include an API key in your request via a `data` object.
+e.g.
+```javascript
+$.ajax({
+  url: "http://blahblah.com/blah" ,
+  data: {
+    api_key: "Some string used as the API key.",
+    additionalData: ...
+  }
+})
+```
+Ask an instructor for the correct key to use!
+
 ### Bonus
 
-Rather than loading and rendering all the comics at once, create an infinite scroller of XKCD comics. In order to make this work, you'll need to pass in two additional parameters: "limit" and "offset". See if you can guess how they work...
+Rather than loading and rendering all the comics at once, have your page implement 'infinite scroll' for your XKCD comics. 
+> In order to make this work, you'll need to add two additional parameters, `limit` and `offset`, to the `data` object.
